@@ -1,1 +1,188 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archit's Tech Space</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background-color: #181743;
+        }
+        header {
+            background-color: #1c1a57;
+            padding: 20px;
+            text-align: center;
+            min-height: 50px;
+        }
+        header h1 {
+            margin: 0;
+            color: #f9dc5c;
+            float: left;
+        }
+        header nav a {
+            color: #ffffff;
+            margin: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            float: right;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #f9dc5c;
+        }
+        .hero p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .hero button {
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background-color: #006d77;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #009d97;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #f9dc5c;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #25245c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+        .card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ee6c4d;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #1c1a57;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #f9dc5c;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Archit's Tech Space</h1>
+        <nav>
+            <a href="#certificates">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#datasets">Datasets</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="archit_passport_size.jpg" alt="Profile Image">
+        <h2>Hi! I am Archit Tyagi</h2>
+        <p>A passionate Data Engineer skilled in Machine Learning, Reinforcement Learning & Data Analysis.</p>
+        <button>Download CV</button>
+        <button>Contact Me</button>
+    </div>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="certificate-placeholder.png" alt="Certificate">
+                <h3>Certificate 1</h3>
+            </div>
+            <div class="card">
+                <img src="certificate-placeholder.png" alt="Certificate">
+                <h3>Certificate 2</h3>
+            </div>
+            <div class="card">
+                <h3>See More</h3>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects Area</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="project-placeholder.png" alt="Project">
+                <h3>Project Title</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <img src="project-placeholder.png" alt="Project">
+                <h3>Project Title</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <h3>See More</h3>
+            </div>
+        </div>
+    </section>
+    <section id="datasets">
+        <h2>Dataset Collection</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Dataset Title</h3>
+                <button>View Dataset</button>
+            </div>
+            <div class="card">
+                <h3>Dataset Title</h3>
+                <button>View Dataset</button>
+            </div>
+            <div class="card">
+                <h3>See More</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Want to know more about my skills, education, and experience? <a href="#">See my Resume now</a>.</p>
+        <p>&copy; 2024 Archit's Tech Space</p>
+    </footer>
+</body>
+</html>
