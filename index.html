@@ -1,246 +1,249 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Archit's Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-      .bg-dark-bg {
-        background-color: rgb(255, 255, 255);
-      }
-      .main-heading {
-        background-color: #1054c2 ; 
-        border-radius: 10px;
-        color:#fff;
-        font-family: Audiowide;
-      }
 
-      .light-bg-button {
-        background-color: rgb(7, 106, 183);
-        text-decoration-color: #fff;
-        font-weight: 500;
-      }
-      .light-bg-button:hover {
-        background-color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
-  <body class=" pb-5" style="background-color: rgb(197, 229, 255);" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archit's Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .bg-dark-bg {
+      background-color: rgb(255, 255, 255);
+    }
 
-    <nav class="navbar fixed-top " style="background-color: rgb(197, 229, 255);">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-3 text-light main-heading px-3" href="">AI Architect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Archit's Tech Space</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Projects</a>
+    .main-heading {
+      background-color: #1054c2;
+      border-radius: 10px;
+      color: #fff;
+      font-family: Audiowide;
+    }
+
+    /* .light-bg-button {
+            background-color: rgb(183, 121, 7);
+            text-decoration-color: #fff;
+            font-weight: 500;
+        } */
+
+    /* .light-bg-button:hover {
+            background-color: rgb(255, 255, 255);
+        } */
+
+    .custom-card {
+      min-height: 27rem;
+    }
+
+    .custom-card>.card-header>.card-title {
+      font-size: 1.8em;
+    }
+
+    .custom-card>.card-body {
+      font-size: 1.5em;
+      font-weight: 600;
+      /* padding: 1.8em; */
+    }
+  </style>
+</head>
+<!-- #f8d2c0; -->
+
+<bosy class="pb-5" style="background-color: rgb(197, 229, 255);">
+
+  <nav class="navbar fixed-top " style="background-color: rgb(197, 229, 255);">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 text-light main-heading px-3" href="">AI Architect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Archit's Tech Space</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="say_portfolio_working_condition()" href="#">Certificates</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" onclick="say_portfolio_working_condition()" href="#">Resume</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Social Connectivities
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" target="_blank" href="https://www.github.com/a4archit">Github</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://www.kaggle.com/architty108">Kaggle</a></li>
+                <li><a class="dropdown-item" target="_blank"
+                    href="https://www.linkedin.com/in/archit-tyagi-191323296">Linked In</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" onclick="say_portfolio_working_condition()" href="#">Certificates</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" onclick="say_portfolio_working_condition()" href="#">Resume</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Social Connectivities
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" target="_blank" href="https://www.github.com/a4archit">Github</a></li>
-                    <li><a class="dropdown-item" target="_blank" href="https://www.kaggle.com/architty108">Kaggle</a></li>
-                    <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/archit-tyagi-191323296">Linked In</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" target="_blank" href="mailto:help.atd@gmail.com">Email</a></li>
-                  </ul>
+                <li><a class="dropdown-item" target="_blank" href="mailto:help.atd@gmail.com">Email</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <!-- 
-      <div id="carouselExampleCaptions" class="carousel slide mt-5" >
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Material/simple-background-robot-digital-art-machine-wallpaper-preview.jpg" class="d-block w-100" style="max-height: 700px;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="">Artificial Intelligence is the future</h3>
-
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Material/download.jpg" class="d-block w-100" style="max-height: 700px;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="python_background.jpg" class="d-block w-100" style="max-height: 700px;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-     -->
-      <!-- ---------- Projects --------- -->
-      <h1 class="display-2 mt-5 mx-5 py-5">Projects</h1>
-      <div class="container mt-2">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
-          <div class="col">
-            <div class="card shadow">
-              <div class="bg-dark-bg rounded-top my-0 mx-0 p-3 px-4">
-                <h5 class="card-title fs-3 mx-auto ">Netflix SRS</h5>
-              </div>
-              <hr class="my-0">
-              <img src="Material/Netlfixsrs-image.png" class="card-img-top img-fluid opacity-0" alt="...">
-              <div class="card-body card-img-overlay d-flex align-items-center">
-                <p class="card-text display-6 fs-3 mx-auto p-4"><b class="mx-auto">A collaborative filtering-based recommender system of Netflix TV Shows and Movies.</b></p>
-                <hr class="my-0">
-              </div>
-              <div class="mx-auto p-2 my-2 z-1" >
-                <a href="https://netflixsrs.streamlit.app" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2">Live demo</button>
-                </a>
-                <a href="https://www.github.com/a4archit/netflix-srs" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2">Source code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col" >
-            <div class="card shadow">
-              <div class="bg-dark-bg rounded-top my-0 mx-0 p-3 px-4">
-                <h5 class="card-title fs-3 mx-auto ">Weight Predictor</h5>
-              </div>
-              <hr class="my-0">
-              <img src="Material/weight-predictor-image.png" class="card-img-top img-fluid opacity-0" alt="...">
-              <div class="card-body card-img-overlay d-flex align-items-center">
-                <p class="card-text display-6 fs-3 mx-auto p-4"><b class="mx-auto">A regressor Machine Learning model that predict body weight of human beings.</b></p>
-                <hr class="my-0">
-              </div>
-              <div class="mx-auto p-2 my-2 z-1" >
-                <a href="https://weight.streamlit.app" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2" >
-                    Live demo
-                  </button>
-                </a>
-                <a href="https://www.github.com/a4archit/weight-predictor" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2">
-                    Source code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow">
-              <div class="bg-dark-bg rounded-top my-0 mx-0 p-3 px-4">
-                <h5 class="card-title fs-3 mx-auto ">Matrix Club </h5>
-              </div>
-              <hr class="my-0">
-              <img src="Material/matrix-club-image.png" class="card-img-top img-fluid opacity-0" alt="...">
-              <div class="card-body card-img-overlay d-flex align-items-center">
-                <p class="card-text display-6 fs-3 mx-auto p-4"><b class="mx-auto">A matrix calculator that helps to apply varity of operations (i.e., Rank, Determinant, etc).</b></p>
-                <hr class="my-0">
-              </div>
-              <div class="mx-auto p-2 my-2 z-1" >
-                <a href="https://matrixclub.streamlit.app" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2" >
-                    Live demo
-                  </button>
-                </a>
-                <a href="https://www.github.com/a4archit/matrix-club" target="_blank" >
-                  <button type="button" class="btn btn-outline-dark mx-2">
-                    Source code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow" style="min-height: 370px;">
-              <div class="bg-dark-bg rounded-top my-0 mx-0 p-3 px-4">
-                <h5 class="card-title fs-3 mx-auto ">Wikipedia Searching Tool</h5>
-              </div>
-              <hr class="my-0">
-              <!-- <img src="Material/matrix-club-image.png" class="card-img-top img-fluid opacity-25" alt="..."> -->
-              <div class="card-body card-img-overlay d-flex align-items-center">
-                <p class="card-text display-6 fs-3 mx-auto p-4"><b class="mx-auto">A matrix calculator that helps to apply varity of operations (i.e., Rank, Determinant, etc).</b></p>
-                <hr class="my-0">
-              </div>
-              <div class="mx-auto sticky-bottom p-2 my-2 z-1" >
-                <!-- <button type="button" class="btn btn-secondary mx-2" >Live demo</button> -->
-                <a href="https://github.com/a4archit/WikipediaSearchTool" target="_blank">
-                  <button type="button" class="btn btn-outline-dark mx-2" style="margin-top: 240px;">
-                    Source code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow" style="min-height: 370px;">
-              <!-- <img src="Material/Netlfixsrs-image.png" class="card-img-top img-fluid opacity-25" alt="..."> -->
-              <div class="card-body card-img-overlay d-flex align-items-center">
-                <p class="card-text text-secondary display-6 mx-auto p-5">More projects will coming soon</p>
-                <hr class="my-0">
-              </div>
-            </div>
-          </div>
-
+            </li>
+          </ul>
         </div>
       </div>
-      
-      
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- ---------- Projects --------- -->
+    <h1 class="display-2 mx-auto py-5">Projects</h1>
+    
+    <div class="container mt-2 project-container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Deol - Devgan</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">A CNN model that classify the image of Ajay Devgan and Sunny Deol.
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <a href="https://deoldevgan.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+              <a href="https://github.com/a4archit/deol-devgan-classifier" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Gidhelp</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">Gidhelp (Github Description Helper) is a LSTM model that help to 
+                write github profile description by suggestion next word.
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <a href="#" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+              <a href="#" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Netflix SRS</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">A collaborative filtering-based recommender system of Netflix TV Shows and
+                Movies.
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <a href="https://netflixsrs.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+              <a href="https://github.com/a4archit/netflix-srs" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Weight Predictor</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">A regressor Machine Learning model that predict body weight of human beings.
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <a href="https://weight.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+              <a href="https://github.com/a4archit/weight-predictor" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Matrix Club</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">A matrix calculator that helps to apply varity of operations (i.e., Rank, Determinant, etc).
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <a href="https://matrixclub.streamlit.app/" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+              <a href="https://www.github.com/a4archit/matrix-club" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="card-header bg-white pt-3 px-4">
+              <h5 class="card-title fw-light">Wikipedia Searching Tool</h5>
+            </div>
+            <div class="card-body p-5">
+              <p class="card-text fw-lighter">It is a Django application that build by the using of wikipedia API. It helps us to getting results from wikipedia.
+              </p>
+
+            </div>
+            <div class="card-footer bg-white py-3">
+              <!-- <a href="#" class="btn btn-outline-secondary mx-2 ">Live demo</a> -->
+              <a href="https://github.com/a4archit/WikipediaSearchTool" class="btn btn-outline-secondary mx-2 ">Source code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm text-center custom-card">
+            <div class="bg-white pt-3 px-4 text-middle display-2">
+              <h5 class="display-5 fw-lighter mt-5 p-3">More amazing projects comming soon...</h5>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
-        // let custom_button = document.querySelector(".comming-soon-alert");
-        // custom_button.addEventListener
-            function say_portfolio_working_condition() {
-                Swal.fire({
-                    title: 'Comming soon',
-                    text: 'Portfolio will updated in the future',
-                    icon: 'info',
-                    confirmButtonText: 'OK'
-                });
-            }
-            
-    </script>
-  </body>
-</html>
+      // let custom_button = document.querySelector(".comming-soon-alert");
+      // custom_button.addEventListener
+      function say_portfolio_working_condition() {
+        Swal.fire({
+          title: 'Comming soon',
+          text: 'Portfolio will updated in the future',
+          icon: 'info',
+          confirmButtonText: 'OK'
+        });
+      }
 
+    </script>
+</body>
+
+</html>
