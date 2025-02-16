@@ -9,6 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
+    body {
+      height: auto;
+      min-height: 200vh;
+      overflow-y: scroll;
+    }
+
     .bg-dark-bg {
       background-color: rgb(255, 255, 255);
     }
@@ -47,9 +53,9 @@
 </head>
 <!-- #f8d2c0; -->
 
-<body data-spy="scroll" class="pb-5" style="background-color: rgb(197, 229, 255);">
+<body class="pb-5" style="background-color: rgb(197, 229, 255);">
 
-  <nav class="navbar fixed-top " style="background-color: rgb(197, 229, 255);">
+  <nav class="navbar fixed-top " style="background-color: rgb(197, 229, 255); ">
     <div class="container-fluid">
       <a class="navbar-brand fs-3 text-light main-heading px-3" href="">AI Architect</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -95,156 +101,169 @@
     </div>
   </nav>
 
-    <!-- ---------- Projects --------- -->
-    <h1 class="display-2 mx-auto py-5">Projects</h1>
-    
-    <div class="container mt-2 project-container">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
 
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Deol - Devgan</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">A CNN model that classify the image of Ajay Devgan and Sunny Deol.
-              </p>
+  <!-- ---------- Projects --------- -->
+   <div class="my-5 pt-3">
+    <center>
+      <h1 class="display-2 mx-auto">Projects</h1>
+    </center>
+   </div>
 
-            </div>
-            <div class="card-footer bg-white py-3">
-              <a href="https://deoldevgan.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
-              <a href="https://github.com/a4archit/deol-devgan-classifier" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
+  <div class="container mt-1 project-container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Deol - Devgan</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">A CNN model that classify the image of Ajay Devgan and Sunny Deol.
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="https://deoldevgan.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+            <a href="https://github.com/a4archit/deol-devgan-classifier" class="btn btn-outline-secondary mx-2 ">Source
+              code</a>
           </div>
         </div>
-
-
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Gidhelp</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">Gidhelp (Github Description Helper) is a LSTM model that help to 
-                write github profile description by suggestion next word.
-              </p>
-
-            </div>
-            <div class="card-footer bg-white py-3">
-              <a href="#" class="btn btn-outline-secondary mx-2 ">Live demo</a>
-              <a href="#" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Netflix SRS</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">A collaborative filtering-based recommender system of Netflix TV Shows and
-                Movies.
-              </p>
-
-            </div>
-            <div class="card-footer bg-white py-3">
-              <a href="https://netflixsrs.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
-              <a href="https://github.com/a4archit/netflix-srs" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Weight Predictor</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">A regressor Machine Learning model that predict body weight of human beings.
-              </p>
-
-            </div>
-            <div class="card-footer bg-white py-3">
-              <a href="https://weight.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
-              <a href="https://github.com/a4archit/weight-predictor" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Matrix Club</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">A matrix calculator that helps to apply varity of operations (i.e., Rank, Determinant, etc).
-              </p>
-
-            </div>
-            <div class="card-footer bg-white py-3">
-              <a href="https://matrixclub.streamlit.app/" class="btn btn-outline-secondary mx-2 ">Live demo</a>
-              <a href="https://www.github.com/a4archit/matrix-club" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="card-header bg-white pt-3 px-4">
-              <h5 class="card-title fw-light">Wikipedia Searching Tool</h5>
-            </div>
-            <div class="card-body p-5">
-              <p class="card-text fw-lighter">It is a Django application that build by the using of wikipedia API. It helps us to getting results from wikipedia.
-              </p>
-
-            </div>
-            <div class="card-footer bg-white py-3">
-              <!-- <a href="#" class="btn btn-outline-secondary mx-2 ">Live demo</a> -->
-              <a href="https://github.com/a4archit/WikipediaSearchTool" class="btn btn-outline-secondary mx-2 ">Source code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm text-center custom-card">
-            <div class="bg-white pt-3 px-4 text-middle display-2">
-              <h5 class="display-5 fw-lighter mt-5 p-3">More amazing projects comming soon...</h5>
-            </div>
-            
-          </div>
-        </div>
-
-
-
-
       </div>
+
+
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Gidhelp</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">Gidhelp (Github Description Helper) is a LSTM model that help to
+              write github profile description by suggestion next word.
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="#" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+            <a href="#" class="btn btn-outline-secondary mx-2 ">Source code</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Netflix SRS</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">A collaborative filtering-based recommender system of Netflix TV Shows and
+              Movies.
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="https://netflixsrs.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+            <a href="https://github.com/a4archit/netflix-srs" class="btn btn-outline-secondary mx-2 ">Source code</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Weight Predictor</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">A regressor Machine Learning model that predict body weight of human
+              beings.
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="https://weight.streamlit.app" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+            <a href="https://github.com/a4archit/weight-predictor" class="btn btn-outline-secondary mx-2 ">Source
+              code</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Matrix Club</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">A matrix calculator that helps to apply varity of operations (i.e., Rank,
+              Determinant, etc).
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="https://matrixclub.streamlit.app/" class="btn btn-outline-secondary mx-2 ">Live demo</a>
+            <a href="https://www.github.com/a4archit/matrix-club" class="btn btn-outline-secondary mx-2 ">Source
+              code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="card-header bg-white pt-3 px-4">
+            <h5 class="card-title fw-light">Wikipedia Searching Tool</h5>
+          </div>
+          <div class="card-body p-5">
+            <p class="card-text fw-lighter">It is a Django application that build by the using of wikipedia API. It
+              helps us to getting results from wikipedia.
+            </p>
+
+          </div>
+          <div class="card-footer bg-white py-3">
+            <a href="https://github.com/a4archit/WikipediaSearchTool" class="btn btn-outline-secondary mx-2 ">Source
+              code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm text-center custom-card">
+          <div class="bg-white pt-3 px-4 text-middle display-2">
+            <h5 class="display-5 fw-lighter mt-5 p-3">More amazing projects comming soon...</h5>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
     </div>
 
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script>
-      // let custom_button = document.querySelector(".comming-soon-alert");
-      // custom_button.addEventListener
-      function say_portfolio_working_condition() {
-        Swal.fire({
-          title: 'Comming soon',
-          text: 'Portfolio will updated in the future',
-          icon: 'info',
-          confirmButtonText: 'OK'
-        });
-      }
 
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+    // let custom_button = document.querySelector(".comming-soon-alert");
+    // custom_button.addEventListener
+    function say_portfolio_working_condition() {
+      Swal.fire({
+        title: 'Comming soon',
+        text: 'Portfolio will updated in the future',
+        icon: 'info',
+        confirmButtonText: 'OK'
+      });
+    }
+
+  </script>
 </body>
 
 </html>
