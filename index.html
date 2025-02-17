@@ -49,12 +49,45 @@
       font-weight: 600;
       /* padding: 1.8em; */
     }
+
+    .custom-skillset-tabs {
+      color: #fff;
+      font-weight: 500;
+      text-shadow: 0 0 3px #7a7a7a;
+    }
+    .custom-skillset-tabs:hover {
+      background-color: #f8c09f;
+      color: #fff;
+    }
+    .custom-skillset-tabs:active {
+      background-color: #f8c09f;
+      color: #fff;
+    }
   </style>
 </head>
 <!-- #f8d2c0; -->
 
-<body class="pb-5" style="background-color: rgb(197, 229, 255);">
+<body class="py-5" style="background-color: rgb(197, 229, 255);">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--------------------------------------- Navbar -------------------------------------->
   <nav class="navbar fixed-top " style="background-color: rgb(197, 229, 255); ">
     <div class="container-fluid">
       <a class="navbar-brand fs-3 text-light main-heading px-3" href="">AI Architect</a>
@@ -102,12 +135,99 @@
   </nav>
 
 
-  <!-- ---------- Projects --------- -->
-   <div class="my-5 pt-3">
+
+
+
+
+
+
+
+
+
+  <!---------------------------------------- Skillset --------------------------------------->
+  <div class="py-2" style="background-color: #f4cbb3; min-height: 100vh;">
+    <div class="mt-5 pt-3">
+      <center>
+        <h1 class="display-2 mx-auto">Skillset</h1>
+      </center>
+    </div>
+    <div class="mx-auto" style="width: fit-content; opacity: 1; transform: translate3d(0px, 0px, 0px); ">
+      <ul class="nav nav-pills mb-3 mx-auto" style="width:max-content;" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active  custom-skillset-tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link custom-skillset-tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Advanced</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link custom-skillset-tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Knowing</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active mt-5 " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container ">
+            <div class="row row-cols-2 row-cols-lg-3 g-1 g-lg-3 gx-0 gy-2 text-secondary " style="max-width: 1000px;">
+              <div class="col gx-0 m-0">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Machine Learning</div>
+              </div>
+              <div class="col gx-0 m-0">
+                <div class="p-3  col-8 border bg-light rounded mx-auto shadow">Deep Learning</div>
+              </div>
+              <div class="col ">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Reinforcement Learning</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Data Gathering</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Communication</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Teamwork</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Critical thinking</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Java</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">Python + libraries</div>
+              </div>
+              <div class="col">
+                <div class="p-3 col-8 border bg-light rounded mx-auto shadow">HTML, CSS & JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- -------------------------------- Projects ------------------------------------- -->
+  <div class="my-5 pt-3">
     <center>
       <h1 class="display-2 mx-auto">Projects</h1>
     </center>
-   </div>
+  </div>
 
   <div class="container mt-1 project-container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
