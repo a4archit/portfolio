@@ -1,4 +1,6 @@
-# my-portfolio
+# About my Portfolio
+
+This portfolio contains whole information about me and my career.
 
 **Note:** This portfolio site not completed yet.
 
